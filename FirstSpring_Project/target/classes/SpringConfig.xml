@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xsi:schemaLocation="http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd"
+	xmlns:context="http://www.springframework.org/schema/context">
+	<bean id="ms" class="com.demo.beans.HelloWorld"></bean>
+	<!--<bean id="p1" class="com.demo.beans.Player">
+		<property name="pid" value="100"></property>
+		<property name="pname" value="Dhoni"></property>
+	</bean>-->
+	
+	<!--<bean id="p1" class="com.demo.beans.Player">
+		<constructor-arg type="int" value="10"></constructor-arg>
+		<constructor-arg type="String" value="Virat"></constructor-arg>
+	</bean>-->
+	<!--<bean id="p2" class="com.demo.beans.Player">
+		<property name="pid" value="7"></property>
+		<property name="pname" value="MSDhoni"></property>
+	</bean>
+	<bean id="p1" class="com.demo.beans.Player">
+		<property name="pid" value="18"></property>
+		<property name="pname" value="Virat"></property>
+	</bean>
+	<bean id="t1" class="com.demo.beans.Team" autowire="byName">
+		<property name="tid" value="1"></property>
+		<property name="tname" value="CSK"></property> 
+	</bean>-->
+	
+	<bean id="p2" class="com.demo.beans.Player">
+		<property name="pid" value="7"></property>
+		<property name="pname" value="MSDhoni"></property>
+	</bean>
+	<bean id="p1" class="com.demo.beans.Player">
+		<property name="pid" value="18"></property>
+		<property name="pname" value="Virat"></property>
+	</bean>
+	<bean id="t1" class="com.demo.beans.Team" autowire="byName">
+		<property name="tid" value="1"></property>
+		<property name="tname" value="CSK"></property> 
+		
+	</bean>
+	</beans>
