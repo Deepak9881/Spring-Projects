@@ -1,0 +1,74 @@
+package com.demo.beans;
+
+public class Product {
+private int prodid;
+private String pname;
+private int quantity;
+private float price;
+
+
+public Product() {
+	super();
+}
+
+
+public Product(int pid, String pname, int qty, float price) {
+	super();
+	this.prodid = pid;
+	this.pname = pname;
+	this.quantity = qty;
+	this.price = price;
+}
+
+
+
+
+
+public String getPname() {
+	return pname;
+}
+
+
+public void setPname(String pname) {
+	this.pname = pname;
+}
+
+
+
+
+public int getProdid() {
+	return prodid;
+}
+
+
+public void setProdid(int prodid) {
+	this.prodid = prodid;
+}
+
+
+public int getQuantity() {
+	return quantity;
+}
+
+
+public void setQuantity(int quantity) {
+	this.quantity = quantity;
+}
+
+
+public float getPrice() {
+	return price;
+}
+
+
+public void setPrice(float price) {
+	this.price = price;
+}
+
+
+@Override
+public String toString() {
+	return "Product [pid=" + prodid + ", pname=" + pname + ", qty=" + quantity + ", price=" + price + "]";
+}
+
+}
